@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#333333">
+        <SurfaceView android:layout_width="326dip" android:id="@+id/previewView" android:keepScreenOn="true" android:layout_height="326dip" android:layout_centerHorizontal="true"></SurfaceView>
+        <Button android:id="@+id/toggleButton" android:text="Use Method 2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/previewView" android:layout_alignLeft="@+id/previewView" android:layout_alignRight="@+id/previewView"></Button>
+        <Button android:id="@+id/autoFocusButton" android:text="Auto-Focus" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/toggleButton" android:layout_alignLeft="@+id/toggleButton" android:layout_alignRight="@+id/toggleButton"></Button>
+        <TextView android:text="" android:layout_width="wrap_content" android:id="@+id/recogTextView" android:layout_below="@+id/autoFocusButton" android:layout_height="wrap_content" android:layout_alignLeft="@+id/autoFocusButton"></TextView>
+        <ImageView android:layout_width="326dip" android:id="@+id/overlayImageView" android:src="@drawable/icon" android:layout_height="326dip" android:layout_centerHorizontal="true"></ImageView>
+    </RelativeLayout>
+    
+    <!--  <RelativeLayout android:paddingLeft="20dip" android:paddingRight="20dip" android:paddingBottom="10dip" android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_width="match_parent">
+        <TextView android:layout_width="wrap_content" android:text="FPS: " android:layout_alignParentTop="true" android:layout_height="wrap_content" android:id="@+id/textView1"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="0" android:layout_toRightOf="@+id/textView1" android:layout_height="wrap_content" android:id="@+id/fpsTextView" android:layout_alignTop="@+id/textView1" android:layout_alignBottom="@+id/textView1"></TextView>
+        <Button android:id="@+id/recognizeButton" android:text="Recognize" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginRight="40dip" android:layout_marginLeft="40dip" android:layout_alignParentBottom="true"></Button>
+    </RelativeLayout> -->
+</LinearLayout>
